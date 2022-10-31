@@ -1,19 +1,121 @@
 <html>
     <head>
         <style>
+            html, body {
+                padding: 0px;
+                margin: 0px;
+                font-family: 'Montserrat', sans-serif;
+                line-height: 1.6;
+            }
             .logo{
                 color: black;
                 background-color: white;
                 border-bottom: 1px solid grey;
                 padding: 10px;
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .logo i {
+                margin-right: 10px ;
+            }
+            .banner {
+                background: url(./images/banner.jpg);
+                background-size: cover;
+            }
+            .banner h1 {
+                margin: 0px;
+                padding: 60px 20px;
+                font-size: 46;
+                color: white;
+            }
+            h2 {
+                text-align: center;
+                font-size: 30px;
+            }
+            .services {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 text-align: center;
             }
+            .service i {
+                font-size: 50px;
+            }
+            .service {
+                margin-bottom: 20px;
+            }
+
+            .block {
+                margin-bottom: 20px;
+                padding: 0 20px;
+            }
+
+            .block.primary{
+                background-color: teal;
+                color: white;
+                padding: 20px;
+            }
+
+            .block.primary h2 {
+                margin-top: 0;
+            }
+
         </style>
         <script src="https://kit.fontawesome.com/9310890428.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        
     </head>
     <body>
         <header>
-            <div class="logo"><i class="fa-solid fa-bullseye"></i></div>
+            <div class="logo"><i class="fa-solid fa-bullseye"></i><span><strong>target</strong></span>web</div>
         </header>
+        <main>
+            <div class="banner">
+                <h1>Freelance web dev done right</h1>
+            </div>
+            <div class="block services">
+                <h2>Our services</h2>
+                <div class="service">
+                    <div class="icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div class="name">
+                        <h3>Web dev</h3>
+                        <p>We offer bespoke web development services that cater to your business needs.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div class="name">
+                        <h3>eCommerce</h3>
+                        <p>We specialise in Magneto to build custom eCommerce solutions to help you sell your products.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div class="name">
+                        <h3>Testing</h3>
+                        <p>We understand the impact bugs can have on your business and specialise in catching them early.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block primary about-us">
+                <h2>About us</h2>
+                <p>We are a young company that takes pride in what we do. We understand the importance of software to your business and make every effort to develop products we are truly proud to call our own.</p>
+                <p>We are constantly growing and looking for the next big project. If you would like to work together, please do not hesitate to get in touch.</p>
+                <p>p.s. We are always on the lookout for talented developers!</p>
+            </div>
+        </main>
     </body>
 </html>
