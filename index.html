@@ -64,6 +64,33 @@
                 margin-top: 0;
             }
 
+            form input[type="email"], form textarea {
+                display: block;
+                margin-bottom: 20px;
+                width: 100%;
+                padding: 10px;
+                border: 1px solid gray;
+                border-radius: 20px;
+            }
+
+            label {
+                display: block;
+                margin: 5px;
+            }
+
+            button {
+                color: white;
+                background: teal;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+
+            .actions {
+                display: flex;
+                justify-content: center;
+            }
+
         </style>
         <script src="https://kit.fontawesome.com/9310890428.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -115,6 +142,20 @@
                 <p>We are a young company that takes pride in what we do. We understand the importance of software to your business and make every effort to develop products we are truly proud to call our own.</p>
                 <p>We are constantly growing and looking for the next big project. If you would like to work together, please do not hesitate to get in touch.</p>
                 <p>p.s. We are always on the lookout for talented developers!</p>
+            </div>
+            <div class="block contact">
+                <h2>Get in touch</h2>
+                <form>
+                    <label>Enter your email</label>
+                    <input type="email">
+                    <label>Enter your message</label>
+                    <textarea></textarea>
+                    <div class="actions">
+                        <button type="submit">send</button>
+                    </div>
+                </form>
+
+
             </div>
         </main>
     </body>
