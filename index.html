@@ -91,6 +91,12 @@
                 justify-content: center;
             }
 
+            .inner-wrap {
+                width: 100%;
+                max-width: 1000px;
+                margin: auto;
+            }
+
             @media(min-width: 768px) {
                 .banner h1 {
                     margin-left: 40px;
@@ -131,36 +137,40 @@
         </header>
         <main>
             <div class="banner">
-                <h1>Freelance web dev done right</h1>
+                <div class="inner-wrap"><
+                    <h1>Freelance web dev done right</h1>
+                </div>
             </div>
             <div class="block services">
-                <h2>Our services</h2>
-                <div class="service-list">
-                    <div class="service">
-                        <div class="icon">
-                            <i class="fa-solid fa-laptop-code"></i>
+                <div class="inner-wrap">
+                    <h2>Our services</h2>
+                    <div class="service-list">
+                        <div class="service">
+                            <div class="icon">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div class="name">
+                                <h3>Web dev</h3>
+                                <p>We offer bespoke web development services that cater to your business needs.</p>
+                            </div>
                         </div>
-                        <div class="name">
-                            <h3>Web dev</h3>
-                            <p>We offer bespoke web development services that cater to your business needs.</p>
+                        <div class="service">
+                            <div class="icon">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div class="name">
+                                <h3>eCommerce</h3>
+                                <p>We specialise in Magneto to build custom eCommerce solutions to help you sell your products.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="service">
-                        <div class="icon">
-                            <i class="fa-solid fa-laptop-code"></i>
-                        </div>
-                        <div class="name">
-                            <h3>eCommerce</h3>
-                            <p>We specialise in Magneto to build custom eCommerce solutions to help you sell your products.</p>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div class="icon">
-                            <i class="fa-solid fa-laptop-code"></i>
-                        </div>
-                        <div class="name">
-                            <h3>Testing</h3>
-                            <p>We understand the impact bugs can have on your business and specialise in catching them early.</p>
+                        <div class="service">
+                            <div class="icon">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div class="name">
+                                <h3>Testing</h3>
+                                <p>We understand the impact bugs can have on your business and specialise in catching them early.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
